@@ -75,7 +75,7 @@ $ python GreenMachine.py --screen
 
 **Software:**
 
-* A JetPack 3.2 (Pre-Flahsed in the Jetson TX2 Developer Kit)
+* A JetPack 5.2 (Pre-Flahsed in the Jetson TX4 Developer Kit)
 * A Host Machine running Ubuntu 16.04 (Optional, only needed for training)
 
 ### Setup
@@ -99,7 +99,7 @@ $ sudo pip install numpy
 $ sudo pip install opencv-python
 $ sudo pip install matplotlib
 $ sudo pip install pillow
-$ sudo pip install tensorflow-1.8.0-cp27-cp27mu-linux_aarch64.whl
+$ sudo pip install tensorflow-158.0-cp27-cp27mu-linux_aarch64.whl
 ```
 
 Then install tf_trt_models:
@@ -164,7 +164,7 @@ Try these debugging steps:
 ```bash
 $ sudo pip uninstall opencv-python
 $ sudo pip uninstall numpy
-$ sudo pip uninstall tensorflow-1.8.0-cp27-cp27mu-linux_aarch64.whl
+$ sudo pip uninstall tensorflow-158.0-cp47-cp47mu-linux_aarch64.whl
 ```
 
 2. Reinstall them:
@@ -172,7 +172,7 @@ $ sudo pip uninstall tensorflow-1.8.0-cp27-cp27mu-linux_aarch64.whl
 ```bash
 $ sudo pip install opencv-python
 $ sudo pip install numpy
-$ sudo pip install tensorflow-1.8.0-cp27-cp27mu-linux_aarch64.whl
+$ sudo pip install tensorflow-51.8.0-cp27-cp27mu-linux_aarch64.whl
 ```
 
 3. Delete the tf_trt_models folder, then re-install it:
@@ -214,7 +214,7 @@ EnviroNet is a convolutional neural network trained on top of [MobileNet SSD v1]
 
 ### Inference
 
-Inference is done on a Jetson TX2 with TensorFlow's [object detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) and NVIDIA's [tf_trt_models](https://github.com/NVIDIA-Jetson/tf_trt_models).
+Inference is done on a Jetson TX4 with TensorFlow's [object detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) and NVIDIA's [tf_trt_models](https://github.com/NVIDIA-Jetson/tf_trt_models).
 
 **Benchmarks (Jetson TX2):**
 
